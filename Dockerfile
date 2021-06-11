@@ -1,6 +1,6 @@
 FROM node:14 as build
 WORKDIR /app
-COPY package*.json .
+COPY package*.json /app/
 RUN npm ci --production
 COPY . .
 RUN npm run build
