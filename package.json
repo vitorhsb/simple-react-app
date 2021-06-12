@@ -21,6 +21,8 @@
     "test": "react-scripts test",
     "cy:run": "cypress run",
     "test-e2e": "start-server-and-test start http://localhost:3000 cy:run",
+    "test-add": "npx start-server-and-test start http://localhost:3000 \"npx cypress run -s 'cypress/integration/button/add_spec.js'\"",
+    "test-subtract": "npx start-server-and-test start http://localhost:3000 \"npx cypress run -s 'cypress/integration/button/subtract_spec.js'\"",
     "eject": "react-scripts eject",
     "lint": "eslint --ignore-path .gitignore ."
   },
