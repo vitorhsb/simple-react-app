@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Button from "./button";
 
 const Form = () => {
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState(1);
 
     return (
         <div className="Form">
